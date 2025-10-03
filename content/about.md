@@ -10,8 +10,6 @@ showToc: false
 searchHidden: true
 ---
 
-# About Me
-
 Hi, I'm **Patrick** — a Senior HPC DevOps & Cloud Engineer at **Covestro Deutschland AG** with a focus on practical infrastructure tooling, secure containerization, and cloud automation.
 
 ---

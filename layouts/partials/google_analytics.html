@@ -1,5 +1,24 @@
-{{- /* Fallback GA partial for PaperMod: no-op unless googleAnalytics is configured. */ -}}
-{{- if .Site.GoogleAnalytics -}}
-  {{- /* Delegate to Hugo's internal GA template (supports UA and GA4 IDs). */ -}}
-  {{- template "_internal/google_analytics.html" . -}}
+{{- /* GA partial: supports GA4 (G-*) or UA-*. Renders only if a tracking ID is set. */ -}}
+{{- $id := .Site.GoogleAnalytics -}}
+{{- if $id -}}
+  {{- if hasPrefix $id "G-" -}}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ $id }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+      gtag('config', '{{ $id }}');
+    </script>
+  {{- else -}}
+    <!-- Universal Analytics -->
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script>
+      if(!window.ga){
+        window.ga = function(){ (ga.q = ga.q || []).push(arguments) };
+        ga.l = +new Date;
+      }
+      ga('create', '{{ $id }}', 'auto');
+      ga('send', 'pageview');
+    </script>
+  {{- end -}}
 {{- end -}}

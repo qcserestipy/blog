@@ -6,7 +6,7 @@ A modern, fast blog built with Hugo and hosted on GitHub Pages.
 
 ### Prerequisites
 
-- [Hugo Extended](https://gohugo.io/getting-started/installing/) (v0.120.4 or later)
+- [Hugo Extended](https://gohugo.io/getting-started/installing/) (v0.149.0 or later)
 - [Git](https://git-scm.com/)
 - [Go](https://golang.org/) (optional, for Hugo modules)
 
@@ -49,6 +49,21 @@ hugo --gc --minify
 
 The site will be generated in the `public/` directory.
 
+### macOS: Install/Upgrade Hugo Extended
+
+```bash
+# Install (Extended) via Homebrew
+brew install hugo
+
+# Or upgrade to the latest
+brew upgrade hugo
+
+# Verify version (should be >= 0.149.0 and "extended")
+hugo version
+```
+
+If you have multiple Hugo versions, ensure your PATH points to the Homebrew one (e.g., `/opt/homebrew/bin`).
+
 ## 📝 Writing Posts
 
 Posts are created in the `content/posts/` directory. Each post should have front matter:
@@ -83,7 +98,7 @@ Your content here...
 
 ### Configuration
 
-Edit `hugo.toml` to customize:
+Hugo uses a single active config file; since `config.toml` exists, it is used (not `hugo.toml`). Edit `config.toml` to customize:
 - Site title and description
 - Social media links
 - Menu items

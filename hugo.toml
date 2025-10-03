@@ -7,7 +7,8 @@ theme = 'PaperMod'
 enableEmoji = true
 
 # Pagination
-paginate = 5
+[pagination]
+  pagerSize = 5
 
 # Enable RSS
 enableRobotsTXT = true
@@ -15,8 +16,6 @@ buildDrafts = false
 buildFuture = false
 buildExpired = false
 
-# Google Analytics (optional - replace with your ID)
-# googleAnalytics = 'G-MEASUREMENT_ID'
 
 [minify]
   disableXML = true
@@ -100,9 +99,6 @@ buildExpired = false
   [[params.socialIcons]]
     name = "email"
     url = "mailto:your.email@example.com"
-
-[params.analytics.google]
-  SiteVerificationTag = "XYZabc"
 
 [params.analytics.bing]
   SiteVerificationTag = "XYZabc"
