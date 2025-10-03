@@ -157,7 +157,3 @@ buildExpired = false
 
 [outputs]
   home = ["HTML", "RSS", "JSON"] # is necessary
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "devplatforms.io hugo site"
-theme = "PaperMod"
