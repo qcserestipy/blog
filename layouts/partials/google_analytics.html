@@ -1,0 +1,5 @@
+{{- /* Fallback GA partial for PaperMod: no-op unless googleAnalytics is configured. */ -}}
+{{- if .Site.GoogleAnalytics -}}
+  {{- /* Delegate to Hugo's internal GA template (supports UA and GA4 IDs). */ -}}
+  {{- template "_internal/google_analytics.html" . -}}
+{{- end -}}
