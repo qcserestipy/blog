@@ -65,12 +65,12 @@ buildExpired = false
   # profile-mode
   [params.profileMode]
     enabled = false # needs to be explicitly set
-    title = "Your Name"
+    title = "devplatforms.io"
     subtitle = "👋 Welcome to my blog"
     imageUrl = "<url of image>"
     imageWidth = 120
     imageHeight = 120
-    imageTitle = "Your Name"
+    imageTitle = "devplatforms.io"
     
     [[params.profileMode.buttons]]
       name = "Posts"

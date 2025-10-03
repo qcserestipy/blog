@@ -4,7 +4,6 @@ date: 2025-10-03T15:31:34+02:00
 draft: false
 tags: ["hugo", "github-pages", "tutorial", "static-site"]
 categories: ["Tutorial", "Web Development"]
-author: "Your Name"
 showToc: true
 TocOpen: false
 hidemeta: false
@@ -27,7 +26,7 @@ cover:
     relative: false
     hidden: true
 editPost:
-    URL: "https://github.com/yourusername/your-blog-repo/tree/main/content"
+    URL: "https://github.com/qcserestipy/blog/tree/main/content"
     Text: "Suggest Changes"
     appendFilePath: true
 ---
