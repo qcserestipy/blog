@@ -2,33 +2,14 @@
 title: "Setting Up Hugo with GitHub Pages"
 date: 2025-10-03T15:31:34+02:00
 draft: false
-tags: ["hugo", "github-pages", "tutorial", "static-site"]
-categories: ["Tutorial", "Web Development"]
-showToc: true
-TocOpen: false
 hidemeta: false
 comments: false
 description: "A comprehensive guide to setting up a Hugo blog with GitHub Pages for free hosting"
-disableHLJS: false
-disableShare: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-UseHugoToc: true
-cover:
-    image: ""
-    alt: "Hugo and GitHub Pages"
-    caption: ""
-    relative: false
-    hidden: true
-editPost:
-    URL: "https://github.com/qcserestipy/blog/tree/main/content"
-    Text: "Suggest Changes"
-    appendFilePath: true
+ShowBreadCrumbs: false
+showToc: false
+searchHidden: true
+tags: ["hugo", "github-pages", "tutorial", "static-site"]
+categories: ["Tutorial", "Web Development"]
 ---
 
 # Setting Up Hugo with GitHub Pages
@@ -134,7 +115,7 @@ jobs:
       - name: Build
         run: hugo --minify
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./public
 
@@ -146,7 +127,7 @@ jobs:
     needs: build
     steps:
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
 ```
 
 ### 5. Enable GitHub Pages

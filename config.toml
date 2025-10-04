@@ -1,6 +1,6 @@
 baseURL = 'https://qcserestipy.github.io/blog'
 languageCode = 'en-us'
-title = 'devplatforms.io'
+title = 'SilentOps'
 theme = 'PaperMod'
 
 # Enable emoji support
@@ -22,7 +22,7 @@ buildExpired = false
 
 [params]
   env = "production"
-  title = "devplatforms.io"
+  title = "SilentOps"
   description = "A blog about technology, programming, and more!"
   keywords = ["Blog", "Portfolio", "Technology"]
   author = "Patrick"
@@ -58,19 +58,19 @@ buildExpired = false
     safari_pinned_tab = "<link / absolute url>"
 
   [params.label]
-    text = "devplatforms.io"
+    text = "SilentOps"
     icon = "/apple-touch-icon.png"
     iconHeight = 35
 
   # profile-mode
   [params.profileMode]
     enabled = false # needs to be explicitly set
-    title = "devplatforms.io"
+    title = "SilentOps"
     subtitle = "👋 Welcome to my blog"
     imageUrl = "<url of image>"
     imageWidth = 120
     imageHeight = 120
-    imageTitle = "devplatforms.io"
+    imageTitle = "SilentOps"
     
     [[params.profileMode.buttons]]
       name = "Posts"

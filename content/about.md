@@ -1,22 +1,22 @@
 ---
 title: "About"
+description: "About Patrick and this blog"
 date: 2025-10-03T15:31:34+02:00
 draft: false
 hidemeta: false
 comments: false
-description: "About Patrick and this blog"
 ShowBreadCrumbs: false
 showToc: false
 searchHidden: true
 ---
 
-Hi, I'm **Patrick** — a Senior HPC DevOps & Cloud Engineer at **Covestro Deutschland AG** with a focus on practical infrastructure tooling, secure containerization, and cloud automation.
+Hi, I'm **Patrick** — a Senior HPC DevOps & Cloud Engineer with a focus on practical infrastructure tooling, secure containerization, and cloud automation.
 
 ---
 
 ## 👨‍💻 Professional Background
 
-- **Role:** Senior HPC DevOps & AWS Cloud Engineer at Covestro (Leverkusen, Germany)  
+- **Role:** Senior HPC DevOps & AWS Cloud Engineer in Germany
 - **Focus Areas:**
   - HPC cluster operations (on-prem Slurm clusters, AWS ParallelCluster, EKS)
   - Kubernetes administration, scaling (Karpenter, GPU/CPU node pools), and monitoring
