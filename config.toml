@@ -81,8 +81,8 @@ buildExpired = false
 
   # home-info mode
   [params.homeInfoParams]
-    Title = "Hi there 👋"
-    Content = "Welcome to my blog! I write about technology, programming, DevOps, and other interesting topics."
+    Title = "GitOps That Works in Production"
+    Content = "My work paradigm is **Automation or Nothing**. I’m a Senior Cloud DevOps engineer who automates 90%+ of my work to make systems reliable and repeatable. Here I share hands‑on experience, opinions, guides and patterns for DevOps, GitOps, and the cloud—so you can ship faster with confidence"
 
   [[params.socialIcons]]
     name = "github"
@@ -90,11 +90,11 @@ buildExpired = false
 
   [[params.socialIcons]]
     name = "linkedin"
-    url = "https://linkedin.com/in/yourusername"
+    url = "https://linkedin.com/in/patrickeschenbach"
 
   [[params.socialIcons]]
     name = "email"
-    url = "mailto:your.email@example.com"
+    url = "mailto:patrickeschenbach96@gmail.com"
 
 [params.analytics.bing]
   SiteVerificationTag = "XYZabc"
